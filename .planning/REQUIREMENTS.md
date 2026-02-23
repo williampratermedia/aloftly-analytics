@@ -156,77 +156,77 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| FOUN-01 | — | Pending |
-| FOUN-02 | — | Pending |
-| FOUN-03 | — | Pending |
-| FOUN-04 | — | Pending |
-| FOUN-05 | — | Pending |
-| FOUN-06 | — | Pending |
-| FOUN-07 | — | Pending |
-| FOUN-08 | — | Pending |
-| FOUN-09 | — | Pending |
-| FOUN-10 | — | Pending |
-| FOUN-11 | — | Pending |
-| FOUN-12 | — | Pending |
-| FOUN-13 | — | Pending |
-| FOUN-14 | — | Pending |
-| INFR-01 | — | Pending |
-| INFR-02 | — | Pending |
-| INFR-03 | — | Pending |
-| INFR-04 | — | Pending |
-| INFR-05 | — | Pending |
-| INFR-06 | — | Pending |
-| INFR-07 | — | Pending |
-| SHOP-01 | — | Pending |
-| SHOP-02 | — | Pending |
-| SHOP-03 | — | Pending |
-| SHOP-04 | — | Pending |
-| GA4-01 | — | Pending |
-| GA4-02 | — | Pending |
-| GA4-03 | — | Pending |
-| CLAR-01 | — | Pending |
-| CLAR-02 | — | Pending |
-| CLAR-03 | — | Pending |
-| INTL-01 | — | Pending |
-| INTL-02 | — | Pending |
-| KNOC-01 | — | Pending |
-| KNOC-02 | — | Pending |
-| KNOC-03 | — | Pending |
-| GORG-01 | — | Pending |
-| GORG-02 | — | Pending |
-| GORG-03 | — | Pending |
-| GORG-04 | — | Pending |
-| JUDG-01 | — | Pending |
-| JUDG-02 | — | Pending |
-| JUDG-03 | — | Pending |
-| DASH-01 | — | Pending |
-| DASH-02 | — | Pending |
-| DASH-03 | — | Pending |
-| DASH-04 | — | Pending |
-| DASH-05 | — | Pending |
-| DASH-06 | — | Pending |
-| DASH-07 | — | Pending |
-| DASH-08 | — | Pending |
-| DASH-09 | — | Pending |
-| DASH-10 | — | Pending |
-| DASH-11 | — | Pending |
-| DASH-12 | — | Pending |
-| DASH-13 | — | Pending |
-| DASH-14 | — | Pending |
-| DASH-15 | — | Pending |
-| PROD-01 | — | Pending |
-| PROD-02 | — | Pending |
-| PROD-03 | — | Pending |
-| PROD-04 | — | Pending |
-| PROD-05 | — | Pending |
-| PROD-06 | — | Pending |
-| PROD-07 | — | Pending |
+| FOUN-01 | Phase 1 | Pending |
+| FOUN-02 | Phase 1 | Pending |
+| FOUN-03 | Phase 1 | Pending |
+| FOUN-04 | Phase 1 | Pending |
+| FOUN-05 | Phase 1 | Pending |
+| FOUN-06 | Phase 1 | Pending |
+| FOUN-07 | Phase 1 | Pending |
+| FOUN-08 | Phase 1 | Pending |
+| FOUN-09 | Phase 1 | Pending |
+| FOUN-10 | Phase 1 | Pending |
+| FOUN-11 | Phase 1 | Pending |
+| FOUN-12 | Phase 1 | Pending |
+| FOUN-13 | Phase 1 | Pending |
+| FOUN-14 | Phase 1 | Pending |
+| PROD-07 | Phase 1 | Pending |
+| INFR-01 | Phase 2 | Pending |
+| INFR-02 | Phase 2 | Pending |
+| INFR-03 | Phase 2 | Pending |
+| INFR-04 | Phase 2 | Pending |
+| INFR-05 | Phase 2 | Pending |
+| INFR-06 | Phase 2 | Pending |
+| INFR-07 | Phase 2 | Pending |
+| SHOP-01 | Phase 2 | Pending |
+| SHOP-02 | Phase 2 | Pending |
+| SHOP-03 | Phase 2 | Pending |
+| SHOP-04 | Phase 2 | Pending |
+| GA4-01 | Phase 3 | Pending |
+| GA4-02 | Phase 3 | Pending |
+| GA4-03 | Phase 3 | Pending |
+| INTL-01 | Phase 3 | Pending |
+| INTL-02 | Phase 3 | Pending |
+| GORG-01 | Phase 3 | Pending |
+| GORG-02 | Phase 3 | Pending |
+| GORG-03 | Phase 3 | Pending |
+| GORG-04 | Phase 3 | Pending |
+| CLAR-01 | Phase 3 | Pending |
+| CLAR-02 | Phase 3 | Pending |
+| CLAR-03 | Phase 3 | Pending |
+| KNOC-01 | Phase 3 | Pending |
+| KNOC-02 | Phase 3 | Pending |
+| KNOC-03 | Phase 3 | Pending |
+| JUDG-01 | Phase 3 | Pending |
+| JUDG-02 | Phase 3 | Pending |
+| JUDG-03 | Phase 3 | Pending |
+| DASH-01 | Phase 4 | Pending |
+| DASH-02 | Phase 4 | Pending |
+| DASH-03 | Phase 4 | Pending |
+| DASH-04 | Phase 4 | Pending |
+| DASH-05 | Phase 4 | Pending |
+| DASH-06 | Phase 4 | Pending |
+| DASH-07 | Phase 4 | Pending |
+| DASH-08 | Phase 4 | Pending |
+| DASH-09 | Phase 4 | Pending |
+| DASH-10 | Phase 4 | Pending |
+| DASH-11 | Phase 4 | Pending |
+| DASH-12 | Phase 4 | Pending |
+| DASH-13 | Phase 4 | Pending |
+| DASH-14 | Phase 4 | Pending |
+| DASH-15 | Phase 4 | Pending |
+| PROD-05 | Phase 4 | Pending |
+| PROD-01 | Phase 5 | Pending |
+| PROD-02 | Phase 5 | Pending |
+| PROD-03 | Phase 5 | Pending |
+| PROD-04 | Phase 5 | Pending |
+| PROD-06 | Phase 5 | Pending |
 
 **Coverage:**
 - v1 requirements: 58 total
-- Mapped to phases: 0
-- Unmapped: 58
+- Mapped to phases: 58
+- Unmapped: 0
 
 ---
 *Requirements defined: 2026-02-23*
-*Last updated: 2026-02-23 after initial definition*
+*Last updated: 2026-02-23 — revised: INFR-06 moved Phase 3→2, PROD-07 moved Phase 5→1*
