@@ -12,7 +12,7 @@ Five phases build Aloftly strictly bottom-up: multi-tenant schema, auth, and obs
 
 Decimal phases appear between their surrounding integers in numeric order.
 
-- [ ] **Phase 1: Foundation** - Multi-tenant schema, Supabase Auth, RLS, Next.js scaffold, CI/CD, and day-one observability
+- [x] **Phase 1: Foundation** - Multi-tenant schema, Supabase Auth, RLS, Next.js scaffold, CI/CD, and day-one observability (completed 2026-02-24)
 - [ ] **Phase 2: Pipeline Infrastructure + Shopify** - Adapter interface, Metrics Service abstraction, Inngest pipeline, webhook framework, and Shopify as the anchor integration
 - [ ] **Phase 3: Remaining Integrations** - All six remaining adapters (GA4 first, then Intelligems, Gorgias, Clarity, KnoCommerce, Judge.me) completing the full data pipeline
 - [ ] **Phase 4: Dashboard + Widgets** - All widget types, dashboard builder, templates, multi-store navigation, date range picker, onboarding wizard, and integration health UI
@@ -113,7 +113,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation | 2/3 | In progress | - |
+| 1. Foundation | 3/3 | Complete   | 2026-02-24 |
 | 2. Pipeline Infrastructure + Shopify | 0/4 | Not started | - |
 | 3. Remaining Integrations | 0/3 | Not started | - |
 | 4. Dashboard + Widgets | 0/3 | Not started | - |

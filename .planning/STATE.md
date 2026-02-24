@@ -10,27 +10,27 @@ See: .planning/PROJECT.md (updated 2026-02-23)
 ## Current Position
 
 Phase: 1 of 5 (Foundation)
-Plan: 2 of 3 in current phase
-Status: In progress
-Last activity: 2026-02-23 — Completed 01-02 (Multi-tenant database schema, migrations, RLS, Vault)
+Plan: 3 of 3 in current phase (COMPLETE)
+Status: Phase 1 complete
+Last activity: 2026-02-23 — Completed 01-03 (Supabase Auth, typed client wrappers, RBAC, Vault helpers, session middleware)
 
-Progress: [██░░░░░░░░] 13%
+Progress: [███░░░░░░░] 20%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 2
+- Total plans completed: 3
 - Average duration: 25 min
-- Total execution time: 0.83 hours
+- Total execution time: 1.25 hours
 
 **By Phase:**
 
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
-| 01-foundation | 2/3 | 50 min | 25 min |
+| 01-foundation | 3/3 | 75 min | 25 min |
 
 **Recent Trend:**
-- Last 5 plans: 01-01 (45 min), 01-02 (5 min)
+- Last 5 plans: 01-01 (45 min), 01-02 (5 min), 01-03 (25 min)
 - Trend: —
 
 *Updated after each plan completion*
@@ -58,6 +58,10 @@ Recent decisions affecting current work:
 - [01-02]: Custom SQL migrations in src/db/migrations/custom/ — Drizzle cannot generate PARTITION BY, auth.jwt() RLS, or cross-schema triggers
 - [01-02]: metricEventsShape defined as const (not pgTable) to provide TypeScript shape without conflicting with raw SQL CREATE TABLE
 - [01-02]: workspace_members RLS uses documented subquery exception — only table without direct org_id column; subquery on workspaces (small cardinality, indexed)
+- [01-03]: Database type stub (src/db/schema/types.ts) required before Supabase CLI types are generated — encodes Vault RPC function signatures for compile-time safety
+- [01-03]: getOrgContext reads user.app_metadata for org_id + role — custom_access_token_hook claims surface here; avoids manual JWT parsing
+- [01-03]: Sign-out as server-side form POST to /api/auth/signout — properly clears session cookie; no client JS needed
+- [01-03]: Dashboard placeholder at /dashboard (not (dashboard)/ root) — avoids route conflict with src/app/page.tsx
 
 ### Pending Todos
 
@@ -69,9 +73,10 @@ None yet.
 - [Phase 3]: Intelligems webhook payload schema is not publicly documented — obtain from provider before building the adapter
 - [Phase 3]: KnoCommerce REST API documentation needs verification — auth model and rate limits unknown
 - [Phase 2]: Verify Supabase Vault + Drizzle pattern for reading secrets in server-side adapter code before starting OAuth implementation
+- [Phase 4]: Update /auth/callback redirect from /dashboard to /onboarding for first-time users when onboarding wizard is built
 
 ## Session Continuity
 
 Last session: 2026-02-23
-Stopped at: Completed 01-02-PLAN.md — Multi-tenant schema, Drizzle migrations, RLS policies, Vault functions, JWT hook
+Stopped at: Completed 01-03-PLAN.md — Supabase Auth, typed client wrappers, RBAC, Vault helpers, session middleware, login page, auth callback, dashboard shell
 Resume file: None

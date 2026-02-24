@@ -10,10 +10,10 @@ Requirements for initial release. Each maps to roadmap phases.
 ### Foundation
 
 - [x] **FOUN-01**: Multi-tenant database schema with org → workspace → store hierarchy and RLS on all tables
-- [ ] **FOUN-02**: Supabase Auth with email/password and magic link sign-in
-- [ ] **FOUN-03**: Role-based access control (owner, admin, member, viewer) with org and workspace-level roles
-- [ ] **FOUN-04**: RLS policies using JWT claims (org_id injected via custom claims, no subqueries)
-- [ ] **FOUN-05**: Typed Supabase client wrappers — `getUserClient(session)` for user reads, `getServiceClient()` restricted to ingestion only
+- [x] **FOUN-02**: Supabase Auth with email/password and magic link sign-in
+- [x] **FOUN-03**: Role-based access control (owner, admin, member, viewer) with org and workspace-level roles
+- [x] **FOUN-04**: RLS policies using JWT claims (org_id injected via custom claims, no subqueries)
+- [x] **FOUN-05**: Typed Supabase client wrappers — `getUserClient(session)` for user reads, `getServiceClient()` restricted to ingestion only
 - [x] **FOUN-06**: `metric_events` unified table with typed indexed columns for cross-source queryable fields and JSONB for source-specific display data, partitioned by (store_id, recorded_at)
 - [x] **FOUN-07**: `metric_definitions` registry table with display names, units, aggregation methods, and categories — drives widget picker and future AI layer
 - [x] **FOUN-08**: `sync_jobs` tracking table with status, cursor position for incremental syncing, error details, and duration metrics
@@ -157,10 +157,10 @@ Which phases cover which requirements. Updated during roadmap creation.
 | Requirement | Phase | Status |
 |-------------|-------|--------|
 | FOUN-01 | Phase 1 | Pending |
-| FOUN-02 | Phase 1 | Pending |
-| FOUN-03 | Phase 1 | Pending |
-| FOUN-04 | Phase 1 | Pending |
-| FOUN-05 | Phase 1 | Pending |
+| FOUN-02 | Phase 1 | Complete |
+| FOUN-03 | Phase 1 | Complete |
+| FOUN-04 | Phase 1 | Complete |
+| FOUN-05 | Phase 1 | Complete |
 | FOUN-06 | Phase 1 | Pending |
 | FOUN-07 | Phase 1 | Pending |
 | FOUN-08 | Phase 1 | Pending |
