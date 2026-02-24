@@ -10,27 +10,27 @@ See: .planning/PROJECT.md (updated 2026-02-23)
 ## Current Position
 
 Phase: 1 of 5 (Foundation)
-Plan: 1 of 3 in current phase
+Plan: 2 of 3 in current phase
 Status: In progress
-Last activity: 2026-02-23 — Completed 01-01 (Next.js scaffold + observability)
+Last activity: 2026-02-23 — Completed 01-02 (Multi-tenant database schema, migrations, RLS, Vault)
 
-Progress: [█░░░░░░░░░] 7%
+Progress: [██░░░░░░░░] 13%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 1
-- Average duration: 45 min
-- Total execution time: 0.75 hours
+- Total plans completed: 2
+- Average duration: 25 min
+- Total execution time: 0.83 hours
 
 **By Phase:**
 
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
-| 01-foundation | 1/3 | 45 min | 45 min |
+| 01-foundation | 2/3 | 50 min | 25 min |
 
 **Recent Trend:**
-- Last 5 plans: 01-01 (45 min)
+- Last 5 plans: 01-01 (45 min), 01-02 (5 min)
 - Trend: —
 
 *Updated after each plan completion*
@@ -54,6 +54,10 @@ Recent decisions affecting current work:
 - [01-01]: shadcn/ui new-york style with violet-600 (#7c3aed) as primary accent color
 - [01-01]: Drizzle postgres driver with prepare: false for PgBouncer transaction mode compatibility
 - [01-01]: Sentry withSentryConfig wraps next.config.ts — silent when not in CI, gracefully degrades without DSN
+- [01-02]: metric_events RANGE partitioned on recorded_at only (not composite with store_id) — store_id filtering via composite index; sub-partitioning would require one partition per store per month
+- [01-02]: Custom SQL migrations in src/db/migrations/custom/ — Drizzle cannot generate PARTITION BY, auth.jwt() RLS, or cross-schema triggers
+- [01-02]: metricEventsShape defined as const (not pgTable) to provide TypeScript shape without conflicting with raw SQL CREATE TABLE
+- [01-02]: workspace_members RLS uses documented subquery exception — only table without direct org_id column; subquery on workspaces (small cardinality, indexed)
 
 ### Pending Todos
 
@@ -69,5 +73,5 @@ None yet.
 ## Session Continuity
 
 Last session: 2026-02-23
-Stopped at: Completed 01-01-PLAN.md — Next.js scaffold, Sentry, Vercel Analytics, CI pipeline
+Stopped at: Completed 01-02-PLAN.md — Multi-tenant schema, Drizzle migrations, RLS policies, Vault functions, JWT hook
 Resume file: None

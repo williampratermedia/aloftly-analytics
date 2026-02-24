@@ -9,18 +9,18 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Foundation
 
-- [ ] **FOUN-01**: Multi-tenant database schema with org → workspace → store hierarchy and RLS on all tables
+- [x] **FOUN-01**: Multi-tenant database schema with org → workspace → store hierarchy and RLS on all tables
 - [ ] **FOUN-02**: Supabase Auth with email/password and magic link sign-in
 - [ ] **FOUN-03**: Role-based access control (owner, admin, member, viewer) with org and workspace-level roles
 - [ ] **FOUN-04**: RLS policies using JWT claims (org_id injected via custom claims, no subqueries)
 - [ ] **FOUN-05**: Typed Supabase client wrappers — `getUserClient(session)` for user reads, `getServiceClient()` restricted to ingestion only
-- [ ] **FOUN-06**: `metric_events` unified table with typed indexed columns for cross-source queryable fields and JSONB for source-specific display data, partitioned by (store_id, recorded_at)
-- [ ] **FOUN-07**: `metric_definitions` registry table with display names, units, aggregation methods, and categories — drives widget picker and future AI layer
-- [ ] **FOUN-08**: `sync_jobs` tracking table with status, cursor position for incremental syncing, error details, and duration metrics
-- [ ] **FOUN-09**: Encrypted credential storage via Supabase Vault for OAuth tokens and API keys
-- [ ] **FOUN-10**: `white_label_config` JSONB field on organizations table (stored from day one, UI deferred)
-- [ ] **FOUN-11**: `feature_flags` JSONB field on organizations table (stored from day one, enforcement later)
-- [ ] **FOUN-12**: `plan_tier` column on organizations table (billing enforcement added later, field exists from day one)
+- [x] **FOUN-06**: `metric_events` unified table with typed indexed columns for cross-source queryable fields and JSONB for source-specific display data, partitioned by (store_id, recorded_at)
+- [x] **FOUN-07**: `metric_definitions` registry table with display names, units, aggregation methods, and categories — drives widget picker and future AI layer
+- [x] **FOUN-08**: `sync_jobs` tracking table with status, cursor position for incremental syncing, error details, and duration metrics
+- [x] **FOUN-09**: Encrypted credential storage via Supabase Vault for OAuth tokens and API keys
+- [x] **FOUN-10**: `white_label_config` JSONB field on organizations table (stored from day one, UI deferred)
+- [x] **FOUN-11**: `feature_flags` JSONB field on organizations table (stored from day one, enforcement later)
+- [x] **FOUN-12**: `plan_tier` column on organizations table (billing enforcement added later, field exists from day one)
 - [x] **FOUN-13**: Next.js 15 App Router project scaffold with TypeScript, Tailwind CSS v4, shadcn/ui, Drizzle ORM
 - [x] **FOUN-14**: Deployment to Vercel with CI/CD pipeline
 

@@ -34,7 +34,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 
 Plans:
 - [x] 01-01-PLAN.md — Next.js 15 scaffold, Tailwind CSS v4, shadcn/ui, Drizzle ORM, Vercel deployment, CI/CD pipeline, Sentry instrumentation, Vercel Analytics
-- [ ] 01-02-PLAN.md — Supabase schema: orgs, workspaces, stores, org_members, metric_events (partitioned), metric_definitions, sync_jobs, integration_connections, RLS policies, Vault functions, org provisioning trigger
+- [x] 01-02-PLAN.md — Supabase schema: orgs, workspaces, stores, org_members, metric_events (partitioned), metric_definitions, sync_jobs, integration_connections, RLS policies, Vault functions, org provisioning trigger
 - [ ] 01-03-PLAN.md — Supabase Auth (magic link + Google OAuth), typed client wrappers, RBAC module, session middleware, Vault TypeScript helpers, login page, dashboard shell
 
 ### Phase 2: Pipeline Infrastructure + Shopify
@@ -113,7 +113,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation | 1/3 | In progress | - |
+| 1. Foundation | 2/3 | In progress | - |
 | 2. Pipeline Infrastructure + Shopify | 0/4 | Not started | - |
 | 3. Remaining Integrations | 0/3 | Not started | - |
 | 4. Dashboard + Widgets | 0/3 | Not started | - |
