@@ -30,12 +30,12 @@ Decimal phases appear between their surrounding integers in numeric order.
   3. The `metric_events` table exists with typed indexed columns for cross-source fields and a JSONB dimensions blob, partitioned correctly, ready to receive data from all 7 integrations
   4. The deployed app on Vercel returns a 200 for the health check route and CI passes on every push to main
   5. Sentry captures unhandled errors from the first deployed commit; Vercel Analytics is reporting Core Web Vitals — error visibility exists before any data pipeline is built
-**Plans**: TBD
+**Plans**: 3 plans
 
 Plans:
-- [ ] 01-01: Next.js 15 scaffold, Tailwind CSS v4, shadcn/ui, Drizzle ORM, Vercel deployment, CI/CD pipeline, Sentry instrumentation, Vercel Analytics
-- [ ] 01-02: Supabase schema — orgs, workspaces, stores, users, metric_events, metric_definitions, sync_jobs, integration_connections with RLS policies
-- [ ] 01-03: Supabase Auth with @supabase/ssr, RBAC middleware, org context injection, Vault setup, typed client wrappers
+- [ ] 01-01-PLAN.md — Next.js 15 scaffold, Tailwind CSS v4, shadcn/ui, Drizzle ORM, Vercel deployment, CI/CD pipeline, Sentry instrumentation, Vercel Analytics
+- [ ] 01-02-PLAN.md — Supabase schema: orgs, workspaces, stores, org_members, metric_events (partitioned), metric_definitions, sync_jobs, integration_connections, RLS policies, Vault functions, org provisioning trigger
+- [ ] 01-03-PLAN.md — Supabase Auth (magic link + Google OAuth), typed client wrappers, RBAC module, session middleware, Vault TypeScript helpers, login page, dashboard shell
 
 ### Phase 2: Pipeline Infrastructure + Shopify
 **Goal**: A working end-to-end data pipeline exists — integration adapter interface and Metrics Service abstraction defined as a paired set, Inngest orchestration running, webhook framework operational, and real Shopify data flowing into `metric_events` and queryable through the service layer
