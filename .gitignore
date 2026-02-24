@@ -2,6 +2,7 @@
 .env
 credentials.json
 token.json
+.mcp.json
 
 # Temporary processing files — regenerated as needed
 .tmp/
