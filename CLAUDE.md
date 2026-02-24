@@ -171,7 +171,7 @@ These apply to every frontend session — no exceptions:
 - Add gradient overlays and color treatments to images — never raw unprocessed images
 - Use intentional spacing tokens, not random Tailwind steps
 - Implement a consistent layering system for surface depth (base → raised → overlay → modal)
-- Build for dark mode from the start — this is a dark-mode-first product
+- Build for light mode from the start — this is a light-mode-first product
 
 ---
 
@@ -207,6 +207,24 @@ A Shopify-focused CRO analytics SaaS that pulls together on-site experience data
 - **Auth:** Supabase Auth or Clerk — confirm before building any auth flows
 - **Background jobs:** Supabase Edge Functions or a queue (confirm approach before building ingestion pipelines)
 - **Deployment:** Vercel
+
+---
+
+## MCP Servers
+
+Configure these in `.claude/mcp_servers.json` (project-level) or `~/.claude/mcp_servers.json` (global).
+
+| MCP             | Priority    | Use Case                                                                                                 |
+| --------------- | ----------- | -------------------------------------------------------------------------------------------------------- |
+| **Supabase**    | Required    | Schema management, RLS policy testing, direct DB queries, migrations. Core data layer lives here.        |
+| **Context7**    | Required    | Up-to-date docs for Next.js, Drizzle, Inngest, shadcn/ui, Recharts, Tremor. Use before guessing at APIs. |
+| **Shopify Dev** | Required    | Admin API schema introspection, OAuth flow reference, GraphQL query validation.                          |
+| **Vercel**      | Recommended | Deployment management, env var management, project config. Saves dashboard clicks.                       |
+| **Sentry**      | Optional    | Error tracking setup and query. Add after Phase 1.                                                       |
+
+**No MCPs exist for:** Clarity, Intelligems, Gorgias, KnoCommerce, Judge.me — work from their REST API docs directly.
+
+**Rule:** Always check MCP tools before manually writing API calls or schema changes. If a Supabase MCP command can do it, use that instead of raw SQL in the terminal.
 
 ### Development Standards for This Project
 
