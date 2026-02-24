@@ -1,0 +1,43 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  lint-and-build:
+    name: Lint and Build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Build
+        run: npm run build
+        env:
+          # Sentry env vars — build succeeds without them (Sentry degrades gracefully)
+          # These are not secrets; the DSN is public-facing
+          NEXT_PUBLIC_SENTRY_DSN: ''
+          SENTRY_ORG: ''
+          SENTRY_PROJECT: ''
+          # Supabase placeholders — build does not connect to DB at build time
+          NEXT_PUBLIC_SUPABASE_URL: 'https://placeholder.supabase.co'
+          NEXT_PUBLIC_SUPABASE_ANON_KEY: 'placeholder'
+          DATABASE_URL: 'postgresql://placeholder:placeholder@localhost:5432/placeholder'
