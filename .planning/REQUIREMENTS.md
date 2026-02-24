@@ -21,8 +21,8 @@ Requirements for initial release. Each maps to roadmap phases.
 - [ ] **FOUN-10**: `white_label_config` JSONB field on organizations table (stored from day one, UI deferred)
 - [ ] **FOUN-11**: `feature_flags` JSONB field on organizations table (stored from day one, enforcement later)
 - [ ] **FOUN-12**: `plan_tier` column on organizations table (billing enforcement added later, field exists from day one)
-- [ ] **FOUN-13**: Next.js 15 App Router project scaffold with TypeScript, Tailwind CSS v4, shadcn/ui, Drizzle ORM
-- [ ] **FOUN-14**: Deployment to Vercel with CI/CD pipeline
+- [x] **FOUN-13**: Next.js 15 App Router project scaffold with TypeScript, Tailwind CSS v4, shadcn/ui, Drizzle ORM
+- [x] **FOUN-14**: Deployment to Vercel with CI/CD pipeline
 
 ### Integration Infrastructure
 
@@ -103,7 +103,7 @@ Requirements for initial release. Each maps to roadmap phases.
 - [ ] **PROD-04**: CSV export at widget and dashboard level
 - [ ] **PROD-05**: Onboarding wizard — guided setup for org creation, first store connection, first integration
 - [ ] **PROD-06**: Error handling with retry UI — "Re-sync" buttons, connection troubleshooter
-- [ ] **PROD-07**: Sentry error tracking and Vercel Analytics instrumentation
+- [x] **PROD-07**: Sentry error tracking and Vercel Analytics instrumentation
 
 ## v2 Requirements
 
@@ -168,9 +168,9 @@ Which phases cover which requirements. Updated during roadmap creation.
 | FOUN-10 | Phase 1 | Pending |
 | FOUN-11 | Phase 1 | Pending |
 | FOUN-12 | Phase 1 | Pending |
-| FOUN-13 | Phase 1 | Pending |
-| FOUN-14 | Phase 1 | Pending |
-| PROD-07 | Phase 1 | Pending |
+| FOUN-13 | Phase 1 | Complete |
+| FOUN-14 | Phase 1 | Complete |
+| PROD-07 | Phase 1 | Complete |
 | INFR-01 | Phase 2 | Pending |
 | INFR-02 | Phase 2 | Pending |
 | INFR-03 | Phase 2 | Pending |
@@ -229,4 +229,4 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 ---
 *Requirements defined: 2026-02-23*
-*Last updated: 2026-02-23 — revised: INFR-06 moved Phase 3→2, PROD-07 moved Phase 5→1*
+*Last updated: 2026-02-23 — FOUN-13, FOUN-14, PROD-07 completed in 01-01*
